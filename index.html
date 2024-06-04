@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collabyte Event Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Collabyte Event Management System</h1>
+        <div class="menu">
+            <button id="upcomingEventsBtn">Upcoming Events</button>
+            <button id="completedEventsBtn">Completed Events</button>
+            <button id="addEventBtn">Add Event</button>
+        </div>
+        <div class="stats">
+            <div id="totalCompleted">Total Completed Events: 0</div>
+            <div id="totalPending">Total Pending Events: 0</div>
+        </div>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search Events...">
+            <button id="searchButton">Search</button>
+        </div>
+        <div class="input-container" id="inputContainer">
+            <input type="text" id="eventName" placeholder="Event Name">
+            <input type="text" id="speakerName" placeholder="Speaker Name">
+            <input type="email" id="speakerEmail" placeholder="Speaker Email">
+            <input type="datetime-local" id="startTime">
+            <input type="datetime-local" id="endTime">
+            <textarea id="eventDescription" placeholder="Event Description"></textarea>
+            <button id="saveEventButton">Save Event</button>
+        </div>
+        <div class="events-container" id="eventsContainer">
+            <h2 id="eventsTitle">Upcoming Events</h2>
+            <table id="eventsTable">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Event Name</th>
+                        <th>Speaker</th>
+                        <th>Email</th>
+                        <th>Start Time</th>
+                        <th>End Time</th>
+                        <th>Description</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="eventsList"></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
